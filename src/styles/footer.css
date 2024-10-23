@@ -1,0 +1,66 @@
+.footer {
+  background-color: #28a745; /* Màu nền tối */
+  color: white; /* Màu chữ */
+  padding: 40px 20px; /* Padding cho footer */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Sắp xếp các phần */
+  flex-wrap: wrap; /* Cho phép xuống hàng */
+  margin-bottom: 20px; /* Khoảng cách dưới */
+}
+
+.footer-section {
+  flex: 1; /* Mỗi phần chiếm chiều rộng bằng nhau */
+  padding: 10px; /* Padding cho mỗi phần */
+  min-width: 250px; /* Đặt chiều rộng tối thiểu */
+}
+
+.footer-section h4 {
+  margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+.footer-section ul {
+  list-style: none; /* Bỏ dấu chấm */
+  padding: 0; /* Bỏ padding */
+}
+
+.footer-section ul li {
+  margin: 5px 0; /* Khoảng cách giữa các mục */
+}
+
+.footer-section ul li a {
+  color: white; /* Màu chữ cho link */
+  text-decoration: none; /* Bỏ gạch chân */
+  transition: color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.footer-section ul li a:hover {
+  color: rgb(45, 37, 111); /* Màu chữ khi hover */
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Khoảng cách giữa các icon */
+  /* padding-left: 25px; */
+}
+.scl-icon {
+  display: flex;
+  align-items: center;
+  color: white; /* Màu mặc định cho liên kết */
+  text-decoration: none; /* Bỏ gạch chân */
+  transition: color 0.3s; /* Hiệu ứng chuyển màu */
+}
+.scl-icon:hover {
+  color: #061628; /* Màu khi di chuột */
+  font-weight: bold;
+}
+
+.footer-bottom {
+  margin-top: 20px; /* Khoảng cách trên */
+  text-align: center; /* Canh giữa */
+  font-size: 14px; /* Kích thước chữ nhỏ hơn */
+}

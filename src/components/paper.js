@@ -7,13 +7,11 @@ export default function SimplePaper() {
      return (
           <Box
                sx={{
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    borderRadius: '10px',
+                    borderRadius: '6px',
                     overflow: 'hidden',
-                    boxShadow: '3px 3px 7px #9e9e9e', // Tùy chỉnh bóng đổ
+                    boxShadow: '2px 2px 7px #9e9e9e', // Tùy chỉnh bóng đổ
                     '& > :not(style)': {
-                         m: 1,
+                         m: 0,
                          width: '100%',
                     },
                }}
