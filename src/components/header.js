@@ -9,20 +9,20 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle'; // Import ico
 const Header = () => {
 
      return (
-          <header className="header">  
+          <header className="header">
                <div className="header-content">
                     <div className="logo">
-                         <img className = 'img-logo' src="/MedicalDevicelogo.png" alt="Logo" /> 
-                         <div className='text-logo'>Thiết bị <br/> Y tế Trường Thịnh</div>
+                         <img className='img-logo' src="/MedicalDevicelogo.png" alt="Logo" />
+                         <div className='text-logo'>Thiết bị <br /> Y tế Trường Thịnh</div>
                     </div>
                     {/* Khối navigation */}
-                <nav className="nav">
-                    <ul>
+                    <nav className="nav">
+                         <ul>
                               <li>
                                    <NavLink to="/" exact activeClassName="active">Trang Chủ</NavLink>
                               </li>
                               <li>
-                                   <NavLink to="/products" activeClassName="active">Sản Phẩm</NavLink>
+                                   <NavLink to="/products/:id" activeClassName="active">Sản Phẩm</NavLink>
                               </li>
                               <li>
                                    <NavLink to="/about" activeClassName="active">Giới Thiệu</NavLink>
@@ -30,14 +30,14 @@ const Header = () => {
                               <li>
                                    <NavLink to="/contact" activeClassName="active">Liên Hệ</NavLink>
                               </li>
-                    </ul>
-                </nav>
+                         </ul>
+                    </nav>
 
                     <div className="icons">
                          <ShoppingCartIcon className="icon" />
                          <AccountCircleIcon className="icon" />
                     </div>
-               </div>          
+               </div>
           </header>
      );
 };
