@@ -1,0 +1,28 @@
+.flex-container {
+     padding: 20px 200px;
+    display: flex; /* Biến thẻ này thành flex container */
+    justify-content: space-between; /* Phân phối không gian đều giữa các phần tử */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100%; /* Chiều cao của container */
+    /* background-color: #f0f0f0; Màu nền cho container */
+}
+
+.flex-item1 {
+    background-color: #fafafa00; /* Màu nền cho các phần tử */
+    padding: 10px; /* Khoảng cách bên trong */
+    color: white; /* Màu chữ */
+    flex: 2;
+}
+.flex-item2 {
+    background-color: #b2c3b3; /* Màu nền cho các phần tử */
+    padding: 10px; /* Khoảng cách bên trong */
+    color: white; /* Màu chữ */
+    flex: 7;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+/* @media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+} */

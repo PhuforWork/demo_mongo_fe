@@ -2,12 +2,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
+import Header from './components/header';
 import Products from './pages/products';
 import ProductDetail from './pages/productDetail';
 import CartPage from './pages/cartPage';
 import Checkout from './pages/checkout';
-import Header from './components/header';
-import Footer from './components/footer';
 
 const App = () => {
      return (
@@ -20,7 +19,6 @@ const App = () => {
                     <Route path="/cart" element={<CartPage />} />
                     <Route path="/checkout" element={<Checkout />} />
                </Routes>
-               <Footer />
           </Router>
      );
 };

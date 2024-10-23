@@ -1,0 +1,84 @@
+/* src/components/Header.css */
+
+.header {
+  background-color: #ea993d;
+  color: white;
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
+}
+.header-content {
+  display: flex; /* Sử dụng flexbox để sắp xếp */
+  justify-content: space-between; /* Tạo khoảng cách giữa các phần */
+  align-items: center; /* Canh giữa theo chiều dọc */
+}
+
+/* logo */
+.logo {
+  padding: 0px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-logo {
+  font-size: large;
+  font-weight: bold;
+  padding: 0px 10px;
+  text-align: left;
+}
+/* nav */
+nav {
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  position: relative;
+  width: 150px; /* Đặt chiều rộng cố định cho các mục */
+  text-align: center; /* Đảm bảo văn bản nằm giữa */
+  background-color: transparent; /* Nền trong suốt ban đầu */
+  transition: background-color 0.3s ease, color 0.1s ease;
+}
+
+nav ul li a.active {
+  background-color: rgba(228, 235, 222, 0.5); /* Màu nền mờ (opacity 30%) */
+  border-bottom: 2px solid #080603b3;
+  color: black; /* Thay đổi màu chữ khi active */
+  /* border: none; */
+}
+nav ul li a:hover {
+  border-bottom: 2px solid #080603b3;
+  /* color: white;  */
+}
+
+/* icon */
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  margin: 0px 2px;
+}
+.img-logo {
+  width: 50px;
+  border-radius: 100%;
+}
