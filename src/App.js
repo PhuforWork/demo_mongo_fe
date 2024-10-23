@@ -5,7 +5,6 @@ import Home from './pages/home';
 import Header from './components/header';
 import Footer from './components/footer';
 import Products from './pages/products';
-import ProductDetail from './pages/productDetail';
 import CartPage from './pages/cartPage';
 import Checkout from './pages/checkout';
 
@@ -15,8 +14,7 @@ const App = () => {
                <Header />
                <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/products" element={<Products />} />
-                    <Route path="/products/:id" element={<ProductDetail />} />
+                    <Route path="/products/:id" element={<Products />} />
                     <Route path="/cart" element={<CartPage />} />
                     <Route path="/checkout" element={<Checkout />} />
                </Routes>
