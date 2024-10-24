@@ -1,10 +1,11 @@
 import * as React from 'react';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
-export default function BasicButtons({ variant, disabled, href, disableElevation, color, size, startIcon, endIcon, text, width, padding }) {
+export default function BasicButtons({ variant, disabled, href, disableElevation, color, size, startIcon, endIcon, text, width, padding, onClick }) {
+
      return (
           <Button
+               onClick= {onClick}
                sx={{ width: width, padding: padding, height: '100%' }}
                variant={variant}
                color={color}
