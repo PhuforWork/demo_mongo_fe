@@ -5,11 +5,15 @@ import AccordingExpand from '../styleComponents/accorditionExpand'
 import According from '../styleComponents/accordition'
 import TextField from '../styleComponents/textField'
 import Button from '../styleComponents/button'
+import Stack from '@mui/material/Stack';
+
+
 
 const product = () => {
      return (
           <Container maxWidth="lg">
                <Grid container spacing={2}>
+                    <Grid sx={{paddingTop: '10px'}}  size={12}/>
                     <Grid size={5}>
                          <div>
                               <img style={{ width: '100%' }} src="/MedicalDevicelogo.png" />
@@ -17,18 +21,34 @@ const product = () => {
                     </Grid>
                     <Grid size={7}>
                          <div>
-                              <h2>Hộp mực máy in canon 2900/3000 Có Nút Đổ Mực- XẢ THẢI DỄ DÀNG Đổ LẠI Mực( 12A/303/fx9) không vỏ hộp</h2>
+                              <span>Hộp mực máy in canon 2900/3000 Có Nút Đổ Mực- XẢ THẢI DỄ DÀNG Đổ LẠI Mực( 12A/303/fx9) không vỏ hộp</span>
                               <div style={{ padding: '5px', display: 'flex' }}>
-                                   <h2 style={{ padding: '3px 0px 3px 0px' }}>₫</h2>
-                                   <h1 style={{ padding: '3px 0px 3px 0px', fontWeight: 'normal' }}>99.999</h1>
+                                   <span style={{ padding: '3px 0px 3px 0px' }}>₫</span>
+                                   <span style={{ padding: '3px 0px 3px 0px', fontWeight: 'normal' }}>99.999</span>
                               </div>
-                              <div>Chính sách trả hàng</div>
-                              <div>Vận chuyển</div>
-                              <div>Số lượng</div>
-                              <div>
-                                   <button>Thêm vào giỏ hàng</button>
-                                   <button>Mua ngay</button>
-                              </div>
+                              <span>Chính sách trả hàng</span>
+                              <span>Vận chuyển</span>
+                              <span>Số lượng</span>
+                              <Stack direction="row" spacing={2}>
+                                   < Button
+                                        variant='contained'
+                                        href=''
+                                        color='success'
+                                        size='small'
+                                        text='Thêm vào giở hàng'
+                                        width='100%'
+                                        padding='10px'
+                                   />
+                                   < Button
+                                        variant='contained'
+                                        href=''
+                                        color='error'
+                                        size='small'
+                                        text='Mua ngay'
+                                        width='100%'
+                                        padding='10px'
+                                   />
+                              </Stack>
                               <div>
                                    <AccordingExpand />
                               </div>
@@ -57,7 +77,6 @@ const product = () => {
                               size='small'
                               text='Gửi'
                               width='100%'
-                              // height='100%'
                               padding='10px'
                          />
                     </Grid>
