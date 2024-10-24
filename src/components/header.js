@@ -22,7 +22,7 @@ const Header = () => {
                                    <NavLink to="/" exact activeClassName="active">Trang Chủ</NavLink>
                               </li>
                               <li>
-                                   <NavLink to="/products/:id" activeClassName="active">Sản Phẩm</NavLink>
+                                   <NavLink to="/products" activeClassName="active">Sản Phẩm</NavLink>
                               </li>
                               <li>
                                    <NavLink to="/about" activeClassName="active">Giới Thiệu</NavLink>
